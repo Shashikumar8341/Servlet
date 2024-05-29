@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="RequestDispatcher" method="get">  
+Name:<input type="text" name="userName"/><br/>  
+Password:<input type="password" name="userPass"/><br/>  
+<input type="submit" value="login"/>  
+</form>  
+<web-app>  
+ <servlet>  
+    <servlet-name>RequestDispatcher</servlet-name>  
+    <servlet-class>RequestDispatcher</servlet-class>  
+  </servlet>  
+  <servlet>  
+    <servlet-name>RequestDis2</servlet-name>  
+    <servlet-class>RequestDis2</servlet-class>  
+  </servlet>  
+  
+  
+  <servlet-mapping>  
+    <servlet-name>RequestDispatcher</servlet-name>  
+    <url-pattern>/RequestDispatcher</url-pattern>  
+  </servlet-mapping>  
+  <servlet-mapping>  
+    <servlet-name>RequestDis2</servlet-name>  
+    <url-pattern>/RequestDis2</url-pattern>  
+  </servlet-mapping>  
+  
+  <welcome-file-list>  
+   <welcome-file>Request.html</welcome-file>  
+  </welcome-file-list>  
+</web-app>  
+</body>
+</html>
